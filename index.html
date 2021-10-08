@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer-Mobile</title>
+    <link rel="stylesheet" href="lib/CSS/style.css">
+    <link rel="stylesheet" href="lib/CSS/jquery.mobile-1.4.5.min.css">
+    <script src="lib/JS/jquery.min.js"></script>
+    <script src="lib/JS/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+    <!-- Seite 1 -->
+    <div data-role="page" id="p1" data-theme="b">
+        <!-- Header -->
+        <div data-role="header">
+            <h1>Countdown-App</h1>
+        </div>
+        
+        <!-- Content -->
+        <div data-role="content">
+            <div class="timeCont">
+                <h1 id="current_Time">00:00:00</h1> 
+            </div>
+
+            <br><br>
+            <div class="container">
+                <div class="countdownSection">
+                    <h2>COUNTDOWN</h2>
+                    <p id="deadline"></p>
+                    <div class="mainDiv">
+                        <div class="cont">Tage</div>
+                        <div class="cont" id="dCont"></div>
+                    </div>
+                
+                    <div class="mainDiv">
+                        <div class="cont">Std.</div>
+                        <div class="cont" id="stCont"></div>
+                    </div>
+                
+                    <div class="mainDiv">
+                        <div class="cont">Min.</div>
+                        <div class="cont" id="mCont"></div>
+                    </div>
+                
+                    <div class="mainDiv">
+                        <div class="cont">Sek.</div>
+                        <div class="cont" id="seCont"></div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <!-- Navigationsbereich -->
+
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#" data-icon="grid" class="ui-btn-active-persist">Home</a></li>
+                    <li><a href="#p2" data-icon="calendar" data-transition="flip">Neuer Countdown</a></li>
+                    <!-- <li><a href="#p3" data-icon="gear">Einstellungen</a></li> -->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Seite 2 -->
+    <div data-role="page" id="p2" data-dialog="true" data-theme="b">
+        <!-- header -->
+        <div data-role="header">
+            <h1>Neuer Countdown</h1>
+        </div>
+
+        <!-- Content -->
+        <div data-role="content">
+
+                <div class="eventSection">
+                    <h2>NEUS EVENT</h2>
+                    <input type="text" id="txtEvent" placeholder="Eventbezeichnung">
+                    <input type="datetime-local" id="theDeadline">
+                    <br>
+                    <button onclick="saveDeadline()" class="ui-btn ui-btn-inline ui-icon-check ui-btn-icon-right">Speichern</button>
+                </div>
+        </div>
+
+            <!-- Navigationsbereich -->
+                
+            <!-- <div data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#p1" data-icon="grid">Home</a></li>
+                        <li><a href="#" data-icon="calendar" class="ui-btn-active-persist">Neuer Countdown</a></li>
+                        <li><a href="#p3" data-icon="gear">Einstellungen</a></li>
+                    </ul>
+                </div>
+            </div> -->
+    </div>
+
+    <script src="lib/JS/app.js"></script>
+</body>
+</html>
