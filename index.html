@@ -18,6 +18,7 @@
             <h1>Countdown-App</h1>
         </div>
         
+        
         <!-- Content -->
         <div data-role="content">
             <div class="timeCont">
@@ -25,11 +26,12 @@
             </div>
 
             <br><br>
+            <button id="delButton" onclick="deleteCountdown()" style="color: red;">Löschen</button>
             <div class="container">
                 <div class="countdownSection">
                     <h2>COUNTDOWN</h2>
                     
-                    <p id="deadline"></p>
+                    <p id="deadline" style="color: yellow;"></p>
                     <div class="mainDiv">
                         <div class="cont">Tage</div>
                         <div class="cont" id="dCont"></div>
@@ -50,6 +52,10 @@
                         <div class="cont" id="seCont"></div>
                     </div>
                 </div>
+            </div>
+            <div class="buttonCont">
+                <button id="btnLeft" onclick="gotoPrev()"><</button>
+                <button id="btnRight" onclick="gotoNext()">></button>
             </div>
         </div>
 

@@ -95,3 +95,7 @@
     text-align: center;
     width: 100%;
 }
+
+.buttonCont{
+    display: flex;
+}
