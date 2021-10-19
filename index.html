@@ -89,7 +89,8 @@
 
                 <div class="eventSection">
                     <h2>NEUS EVENT</h2>
-                    <input type="text" id="txtEvent" placeholder="Eventbezeichnung...">
+                    <p id="ausgZeichen">0/25 Zeichen</p>
+                    <input type="text" id="txtEvent" placeholder="Eventbezeichnung..." onkeyup="checkChrLength()">
                     <input type="datetime-local" id="theDeadline">
                     <br>
                     <button onclick="saveDeadline()" class="ui-btn ui-btn-inline ui-icon-check ui-btn-icon-right">Speichern</button>
