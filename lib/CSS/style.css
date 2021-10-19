@@ -99,3 +99,11 @@
 .buttonCont{
     display: flex;
 }
+
+#btnLeft{
+    font-size: 12px;
+}
+
+#btnRight{
+    font-size: 12px;
+}
