@@ -54,7 +54,7 @@
                     </div>
                 </div>
             </div>
-            <button id="delButton" onclick="deleteCountdown()" style="color: red;"> Countdown löschen</button>
+            <!-- <button id="delButton" onclick="deleteCountdown()" style="color: red;"> Countdown löschen</button> -->
         </div>
 
 
@@ -63,16 +63,12 @@
         <div data-role="footer" data-position="fixed">
             <div data-role="navbar">
                 <ul>
-                    <li><a href="#" data-icon="grid" class="ui-btn-active-persist">Home</a></li>
+                    <li><a href="#" data-icon="delete" onclick="deleteCountdown()" id="delButton" style="color: red;">Diesen Countdown löschen</a></li>
                     <li><a href="#p2" data-icon="calendar" data-transition="flip">Neuer Countdown</a></li>
-                    <!-- <li><a href="#p3" data-icon="gear">Einstellungen</a></li> -->
                 </ul>
             </div>
         </div>
     </div>
-
-
-
 
 
     <!-- Seite 2 -->
