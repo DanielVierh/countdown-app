@@ -24,12 +24,13 @@
             <div class="timeCont">
                 <h1 id="current_Time">00:00:00</h1> 
             </div>
-
-            <br><br>
-            <button id="delButton" onclick="deleteCountdown()" style="color: red;">Löschen</button>
+            <div class="buttonCont">
+                <button id="btnLeft" onclick="gotoPrev()"><</button>
+                <button id="btnRight" onclick="gotoNext()">></button>
+            </div>
             <div class="container">
                 <div class="countdownSection">
-                    <h2>COUNTDOWN</h2>
+                    <h2 id="bez">COUNTDOWN</h2>
                     
                     <p id="deadline" style="color: yellow;"></p>
                     <div class="mainDiv">
@@ -53,10 +54,7 @@
                     </div>
                 </div>
             </div>
-            <div class="buttonCont">
-                <button id="btnLeft" onclick="gotoPrev()"><</button>
-                <button id="btnRight" onclick="gotoNext()">></button>
-            </div>
+            <button id="delButton" onclick="deleteCountdown()" style="color: red;"> Countdown löschen</button>
         </div>
 
 
@@ -86,7 +84,6 @@
 
         <!-- Content -->
         <div data-role="content">
-
                 <div class="eventSection">
                     <h2>NEUS EVENT</h2>
                     <p id="ausgZeichen">0/25 Zeichen</p>
