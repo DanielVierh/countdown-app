@@ -17,12 +17,12 @@
         <div data-role="header">
             <h1>Countdown-App</h1>
         </div>
-        
-        
+
+
         <!-- Content -->
         <div data-role="content">
             <div class="timeCont">
-                <h1 id="current_Time">00:00:00</h1> 
+                <h1 id="current_Time">00:00:00</h1>
             </div>
             <div class="buttonCont">
                 <button id="btnLeft" onclick="gotoPrev()"><</button>
@@ -31,23 +31,23 @@
             <div class="container">
                 <div class="countdownSection">
                     <h2 id="bez">COUNTDOWN</h2>
-                    
+
                     <p id="deadline" style="color: yellow;"></p>
                     <div class="mainDiv">
                         <div class="cont">Tage</div>
                         <div class="cont" id="dCont"></div>
                     </div>
-                
+
                     <div class="mainDiv">
                         <div class="cont">Std.</div>
                         <div class="cont" id="stCont"></div>
                     </div>
-                
+
                     <div class="mainDiv">
                         <div class="cont">Min.</div>
                         <div class="cont" id="mCont"></div>
                     </div>
-                
+
                     <div class="mainDiv">
                         <div class="cont">Sek.</div>
                         <div class="cont" id="seCont"></div>
@@ -63,7 +63,8 @@
         <div data-role="footer" data-position="fixed">
             <div data-role="navbar">
                 <ul>
-                    <li><a href="#" data-icon="delete" onclick="deleteCountdown()" id="delButton" style="color: red;">Diesen Countdown löschen</a></li>
+                    <li><a href="#" data-icon="delete" onclick="deleteCountdown()" id="delButton" style="color: red;">Timer löschen</a></li>
+                    <li><a href="#p3" data-icon="eye" data-transition="flip">Übersicht</a></li>
                     <li><a href="#p2" data-icon="calendar" data-transition="flip">Neuer Countdown</a></li>
                 </ul>
             </div>
@@ -90,6 +91,39 @@
                 </div>
         </div>
     </div>
+
+
+        <!-- Seite 3 -->
+        <div data-role="page" id="p3" data-dialog="false" data-theme="b">
+            <!-- header -->
+            <div data-role="header">
+                <h1>Übersicht</h1>
+            </div>
+
+            <!-- Content -->
+            <div data-role="content">
+                    <div class="eventSection">
+                        <h2>Alle Countdowns</h2>
+                    </div>
+
+                    <div id="countdownContainer">
+                        <!-- <div class="wrapper">
+                            <h3>Urlaub</h3>
+                            <h4>01.12.2022 - 13:00</h4>
+                            <p>24 T | 12 Std | 33 Min | 53 Sek</p>
+                        </div> -->
+                    </div>
+            </div>
+
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#p1" data-icon="home" data-transition="flip">Home</a></li>
+                        <li><a href="#p2" data-icon="calendar" data-transition="flip">Neuer Countdown</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
     <script src="lib/JS/app.js"></script>
 </body>
