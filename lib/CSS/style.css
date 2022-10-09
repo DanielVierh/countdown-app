@@ -143,6 +143,7 @@
     position: relative;
 }
 
+
 .wrapper h3 {
     color: white;
 }
@@ -164,6 +165,23 @@
     min-width: 310px;
     box-shadow: inset 0 0 3px white;
     text-align: center;
+}
+
+.wrapper .expired {
+    display: none;
+}
+.wrapper .expired.active{
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    font-size: .8em;
+    color: tomato;
+    background-color: black;
+    min-width: 0px;
+    transform: rotate(-20deg);
+    z-index: 1000;
+
 }
 
 @media (max-width: 400px) {
