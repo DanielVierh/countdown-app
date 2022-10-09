@@ -33,8 +33,7 @@
             <div class="container">
                 <div class="countdownSection">
                     <h2 id="bez">COUNTDOWN</h2>
-
-                    <p id="deadline"></p>
+                    <p id="deadline" onclick="changeDate()"></p>
                     <div class="mainDiv">
                         <div class="cont">Tage</div>
                         <div class="cont" id="dCont"></div>
@@ -65,7 +64,7 @@
         <div data-role="footer" data-position="fixed">
             <div data-role="navbar">
                 <ul>
-                    <li><a href="#" data-icon="delete" onclick="deleteCountdown()" id="delButton" style="color: red;">Timer löschen</a></li>
+                    <!-- <li><a href="#" data-icon="delete" onclick="deleteCountdown1()" id="delButton" style="color: red;">Timer löschen</a></li> -->
                     <li><a href="#p3" data-icon="eye" data-transition="flip">Übersicht</a></li>
                     <li><a href="#p2" data-icon="calendar" data-transition="flip">Neuer Countdown</a></li>
                 </ul>
