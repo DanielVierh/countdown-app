@@ -26,10 +26,6 @@
             <div class="timeCont">
                 <h1 id="current_Time">00:00:00</h1>
             </div>
-            <div class="buttonCont">
-                <button id="btnLeft" onclick="gotoPrev()"><</button>
-                <button id="btnRight" onclick="gotoNext()">></button>
-            </div>
             <div class="container">
                 <div class="countdownSection">
                     <h2 id="bez">COUNTDOWN</h2>
@@ -55,7 +51,6 @@
                     </div>
                 </div>
             </div>
-            <!-- <button id="delButton" onclick="deleteCountdown()" style="color: red;"> Countdown löschen</button> -->
         </div>
 
 
@@ -103,10 +98,6 @@
 
             <!-- Content -->
             <div data-role="content">
-                    <!-- <div class="eventSection">
-                        <h2>Alle Countdowns</h2>
-                    </div> -->
-
                     <div id="countdownContainer">
                         <!-- <div class="wrapper">
                             <p class="expired active">Abgelaufen</p>
@@ -120,8 +111,8 @@
             <div data-role="footer" data-position="fixed">
                 <div data-role="navbar">
                     <ul>
-                        <li><a href="#p1" data-icon="home" data-transition="flip">Home</a></li>
-                        <li><a href="#p2" data-icon="calendar" data-transition="flip">Neuer Countdown</a></li>
+                        <!-- <li><a href="#p1" data-icon="home" data-transition="flip">Home</a></li> -->
+                        <li><a href="#p2" data-icon="calendar" data-transition="flip" onclick="newEvent()">Neuer Countdown</a></li>
                     </ul>
                 </div>
             </div>
