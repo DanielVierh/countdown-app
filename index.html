@@ -26,6 +26,12 @@
             <div class="timeCont">
                 <h1 id="current_Time">00:00:00</h1>
             </div>
+            <!-- <select id="settingsAppearance" onchange="changeAppearance(this)" class="optionfield">
+                <option value="opt_none">Auswählen</option>
+                <option value="opt_darkmode">Darkmode</option>
+                <option value="opt_normal">Normal</option>
+                <option value="opt_lightmode">Lightmode</option>
+            </select> -->
             <div class="container">
                 <div class="countdownSection">
                     <h2 id="bez">COUNTDOWN</h2>
@@ -60,8 +66,8 @@
             <div data-role="navbar">
                 <ul>
                     <!-- <li><a href="#" data-icon="delete" onclick="deleteCountdown1()" id="delButton" style="color: red;">Timer löschen</a></li> -->
-                    <li><a href="#p3" data-icon="eye" data-transition="flip">Übersicht</a></li>
-                    <li><a href="#p2" data-icon="calendar" data-transition="flip">Neuer Countdown</a></li>
+                    <li><a href="#p3" data-icon="arrow-l" data-transition="flip">Übersicht</a></li>
+                    <li><a href="#p2" data-icon="calendar" data-transition="flip" onclick="newEvent()">Neuer Countdown</a></li>
                 </ul>
             </div>
         </div>
