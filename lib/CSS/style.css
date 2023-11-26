@@ -18,7 +18,7 @@
 
 #current_Time{
     padding: 20px;
-    font-family: 'Wallpoet';
+    font-family: sans-serif;
     font-size: 55px;
     text-shadow: black 30px 18px 15px;
     backdrop-filter: blur(30px);
@@ -40,7 +40,7 @@
     background: rgba(65, 65, 65, 0.4);
     display: grid;
     place-items: center;
-    font-family: 'Wallpoet';
+    font-family: sans-serif;
     color: turquoise;
     font-size: 40px;
     border-radius: 10px;
