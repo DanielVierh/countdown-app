@@ -1,5 +1,8 @@
+body {
+    font-family: sans-serif;
+}
 
-.container{
+.container {
     background: rgba(7, 7, 7, 0);
     color: black;
     display: grid;
@@ -10,13 +13,13 @@
 }
 
 
-.timeCont{
+.timeCont {
     display: flex;
     min-width: 100%;
     justify-content: center;
 }
 
-#current_Time{
+#current_Time {
     padding: 20px;
     font-family: sans-serif;
     font-size: 55px;
@@ -25,15 +28,16 @@
     background-color: rgba(230, 227, 227, 0.089);
     border-radius: 15px;
     color: white;
-    box-shadow: rgba(0,0,0,0.4) 30px 18px 15px;;
+    box-shadow: rgba(0, 0, 0, 0.4) 30px 18px 15px;
+    ;
 }
 
-.mainDiv{
+.mainDiv {
     display: flex;
     text-align: center;
 }
 
-.cont{
+.cont {
     width: 150px;
     height: 50px;
     border: 2px solid black;
@@ -46,7 +50,7 @@
     border-radius: 10px;
 }
 
-.eventSection{
+.eventSection {
     background-color: rgba(65, 65, 65, 0.4);
     color: turquoise;
     text-align: center;
@@ -58,7 +62,7 @@
 }
 
 
-.countdownSection{
+.countdownSection {
     grid-column: 1 / 5;
     grid-row: 3 / 6;
     color: white;
@@ -66,8 +70,8 @@
     border-radius: 15px;
 }
 
-.btnSave{
-    background-color: rgba(0,0,10,0.9);
+.btnSave {
+    background-color: rgba(0, 0, 10, 0.9);
     color: green;
     border-radius: 10px;
     margin: 10px;
@@ -75,7 +79,7 @@
     font-weight: bold;
 }
 
-#txtEvent{
+#txtEvent {
     background-color: rgba(255, 255, 255, 0.616);
     color: black;
     text-align: center;
@@ -83,7 +87,8 @@
     height: 30px;
     font-weight: bold;
 }
-::placeholder{
+
+::placeholder {
     color: white;
     opacity: 0.5;
 }
@@ -110,22 +115,22 @@
 }
 
 
-#theDeadline{
+#theDeadline {
     background-color: rgba(255, 255, 255, 0.616);
     color: black;
     text-align: center;
     width: 100%;
 }
 
-.buttonCont{
+.buttonCont {
     display: flex;
 }
 
-#btnLeft{
+#btnLeft {
     font-size: 12px;
 }
 
-#btnRight{
+#btnRight {
     font-size: 12px;
 }
 
@@ -149,6 +154,7 @@
 .wrapper h3 {
     color: white;
 }
+
 .wrapper h4 {
     margin-top: -7px;
     color: teal;
@@ -172,7 +178,8 @@
 .wrapper .expired {
     display: none;
 }
-.wrapper .expired.active{
+
+.wrapper .expired.active {
     display: block;
     position: absolute;
     top: 20px;
@@ -220,15 +227,68 @@
 /* *################################## */
 /* * NEW */
 
+:root {
+    --main-color: rgba(11, 34, 54, 0.829);
+    --modal-bg: rgba(2, 21, 28, 0.695);
+}
+
 .header {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.829);
+    background-color: var(--main-color);
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    color: white;
+}
+
+.new_countdown {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    color: white;
+    min-height: 60px;
+    padding: 10px 0;
+
+    p {
+        margin: 0 0 5px 0;
+        font-size: 1.2rem;
+    }
+}
+
+.modal {
+    transform: translateY(700%);
+    transition: transform 1s ease-in-out;
+
+    &.active {
+        transform: translateY(0);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: var(--modal-bg);
+        z-index: 999;
+        backdrop-filter: blur(13px);
+
+    }
+}
+
+.new-countdown-modal {
+    padding: 30px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
     color: white;
 }
